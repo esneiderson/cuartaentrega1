@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var n=11;
+	</script>
+	<title>PRIMERO</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="esneider()">
+
+       <div id="general">
+       	<p id="tiempo">HOLA<br><br>
+		</div>
+		
+	<script>
+    
+
+		function conteo(){
+			console.log(n);
+			n=n-1;
+			cuadro=document.getElementById('tiempo');
+             cuadro.innerHTML = n;
+            
+
+  
+			if(n==0)
+			{ 
+            clearInterval(time);
+
+              cuadro.innerHTML= "TERMINO";
+			}
+
+		}
+
+
+		function esneider(){
+
+			time=setInterval(conteo,1000);
+		}
+
+	</script>
+
+ <a href="" class="first">SEGUNDA</a>
+  <a href=""  class="second">TERCERA</a>
+</body>
+</html>
